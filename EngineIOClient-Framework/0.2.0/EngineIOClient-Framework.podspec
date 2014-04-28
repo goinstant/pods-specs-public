@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform = :ios, '6.0'
   s.requires_arc = true
   s.dependency 'SocketRocket', '~> 0.3.1-beta2'
-  s.source       = { :http => 'https://cdn.goinstant.net/mobile/ios/engine.io-client/v0.2.0/test.tar.gz' }
+  s.source       = { :http => 'https://cdn.goinstant.net/mobile/ios/engine.io-client/v0.2.0/engine.io-client-ios-sdk.0.2.0.tar.gz' }
 
   s.source_files = 'EngineIOClient.framework/Versions/A/Headers/*.h'
   s.preserve_paths = 'EngineIOClient.framework'
