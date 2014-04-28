@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "0.2.0"
   s.platform     = :ios
   s.summary      = "engine.io objc implementation"
-  s.homepage     = "https://github.com/goinstant/engine.io-objc"
+  s.homepage     = "https://goinstant.com"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "GoInstant inc." => "support@goinstant.com" }
 
