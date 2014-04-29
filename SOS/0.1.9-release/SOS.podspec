@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source       = { :http => 'https://s3.amazonaws.com/cdn.goinstant.net/mobile/ios/sos/v0.1.9/sos-ios-sdk.0.1.9.tar.gz' }
   s.platform = :ios, "7.0"
 
-  s.dependency 'GoInstant', '0.1.14-release'
+  s.dependency 'GoInstant', '0.2.0-release'
   s.dependency 'AddLive', '3.0.1.26'
   s.dependency 'MBProgressHUD', '~> 0.8'
   s.frameworks = 'SOS'
