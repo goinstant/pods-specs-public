@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.source       = { :http => 'https://cdn.goinstant.net/mobile/ios/goinstant/v0.1.14/goinstant-ios-sdk.0.1.14.tar.gz' }
 
   s.dependency 'EngineIOClient', '0.2.0-release'
+  s.frameworks = 'GoInstant'
 
   s.source_files = 'GoInstant.framework/Versions/A/Headers/*.h'
   s.preserve_paths = 'GoInstant.framework'
