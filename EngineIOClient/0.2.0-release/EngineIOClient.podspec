@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source_files = 'EngineIOClient.framework/Versions/A/Headers/*.h'
   s.preserve_paths = 'EngineIOClient.framework'
 
-  s.frameworks = 'CFNetwork', 'Security'
+  s.frameworks = 'EngineIOClient', 'CFNetwork', 'Security'
   s.libraries = 'icucore'
 
   s.xcconfig = {
