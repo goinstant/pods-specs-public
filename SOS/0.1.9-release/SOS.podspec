@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.dependency 'GoInstant', '0.1.14-release'
   s.dependency 'AddLive', '3.0.1.26'
   s.dependency 'MBProgressHUD', '~> 0.8'
+  s.frameworks = 'SOS'
   s.libraries = 'z'
   
   s.source_files = 'SOS.framework/Versions/A/Headers/*.h'
