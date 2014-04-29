@@ -22,4 +22,8 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'SOS.framework'
 
   s.requires_arc = true
+  
+  s.xcconfig = {
+    'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/SOS/"'
+  }
 end
