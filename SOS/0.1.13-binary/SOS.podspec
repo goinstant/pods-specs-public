@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author       = { "GoInstant inc." => "support@goinstant.com" }
 
   s.source       = { :http => 'https://s3.amazonaws.com/cdn.goinstant.net/mobile/ios/sos/v0.1.13/SOS-iOS-SDK-v0.1.13.tar.gz' }
-  s.platform = :ios, "7.0"
+  s.platform = :ios, "6.1"
 
   s.dependency 'GoInstant', '0.2.0-release'
   s.dependency 'AddLive', '3.0.1.26'
