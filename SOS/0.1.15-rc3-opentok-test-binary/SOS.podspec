@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
   
   s.dependency 'AddLive', '3.0.1.26'
   
+  s.dependency 'OpenTok', '2.2.0-beta-3'
+  
   s.dependency 'MBProgressHUD', '~> 0.8'
   
 
