@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.dependency 'GoInstant', '0.2.2-binary'
   
   
-  s.dependency 'OpenTokSDK-WebRTC', '2.2.0-beta-3'
+  s.dependency 'AddLive', '3.0.1.26'
   
   s.dependency 'MBProgressHUD', '~> 0.8'
   
