@@ -14,7 +14,6 @@ Pod::Spec.new do |s|
   
   s.dependency 'GoInstant', '0.2.2-binary'
   
-
   
   s.dependency 'AddLive', '3.0.1.26'
   
