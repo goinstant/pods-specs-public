@@ -12,17 +12,22 @@ Pod::Spec.new do |s|
 
   s.source_files = 'OpenTok.framework/Versions/A/Headers/*.h'
   s.resources    = 'OpenTok.framework/Versions/A/OpenTok'
+  s.preserve_paths = 'OpenTok.framework'
+  s.requires_arc = false
 
-  s.frameworks = 'Opentok', 'UIKit', 
+  other_frameworks = 'Opentok', 'UIKit', 
                  'CoreMedia', 'CoreVideo', 'CoreAudio', 'CoreTelephony',
                  'CFNetwork', 'AVFoundation', 'SystemConfiguration', 'Security',
                  'QuartzCore', 'AudioToolbox', 'OpenGLES', 'MobileCoreServices'
 
-  s.libraries = 'stdc++', 'z', 'sqlite3.0', 'xml2.2'
+  other_ldflags = '$(inherited) -framework ' + other_frameworks.join(' -framework ') + ' -lz -lsqlite3.0 -lstdc++ -lxml2.2'
 
-  s.xcconfig  = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/OpenTok/"' }
+  s.xcconfig = {
+    'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/AddLive"',
+    
+    'OTHER_LDFLAGS[arch=arm64]'  => other_ldflags,
+    'OTHER_LDFLAGS[arch=armv7]'  => other_ldflags,
+    'OTHER_LDFLAGS[arch=armv7s]' => other_ldflags 
+  }
 
-  s.preserve_paths = 'OpenTok.framework'
-
-  s.requires_arc = false
 end
