@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'OpenTok.framework'
   s.requires_arc = false
 
-  other_frameworks = 'Opentok', 'UIKit', 
+  other_frameworks = 'OpenTok', 'UIKit', 
                  'CoreMedia', 'CoreVideo', 'CoreAudio', 'CoreTelephony',
                  'CFNetwork', 'AVFoundation', 'SystemConfiguration', 'Security',
                  'QuartzCore', 'AudioToolbox', 'OpenGLES', 'MobileCoreServices'
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   other_ldflags = '$(inherited) -framework ' + other_frameworks.join(' -framework ') + ' -lz -lsqlite3.0 -lstdc++ -lxml2.2'
 
   s.xcconfig = {
-    'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/AddLive"',
+    'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/OpenTok"',
     
     'OTHER_LDFLAGS[arch=arm64]'  => other_ldflags,
     'OTHER_LDFLAGS[arch=armv7]'  => other_ldflags,
