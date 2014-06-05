@@ -6,23 +6,28 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/opentok/opentok-ios-sdk-webrtc/'
   s.license  = { :type => 'Apache', :file => 'LICENSE.txt' }
 
-  s.source       = { :http => 'https://s3.amazonaws.com/mobile.goinstant.org/228a5a06-9feb-4cef-9b72-9aac6b5b5234/OpenTok-SDK.2.2.0-beta-3.tar.gz' }
+  s.source   = { :http => 'https://s3.amazonaws.com/mobile.goinstant.org/228a5a06-9feb-4cef-9b72-9aac6b5b5234/OpenTok-SDK.2.2.0-beta-3.tar.gz' }
 
   s.platform = :ios, '5.0'
 
   s.source_files = 'OpenTok.framework/Versions/A/Headers/*.h'
   s.resources    = 'OpenTok.framework/Versions/A/OpenTok'
+  s.preserve_paths = 'OpenTok.framework'
+  s.requires_arc = false
 
-  s.frameworks = 'Opentok', 'UIKit', 
+  other_frameworks = 'Opentok', 'UIKit', 
                  'CoreMedia', 'CoreVideo', 'CoreAudio', 'CoreTelephony',
                  'CFNetwork', 'AVFoundation', 'SystemConfiguration', 'Security',
                  'QuartzCore', 'AudioToolbox', 'OpenGLES', 'MobileCoreServices'
 
-  s.libraries = 'stdc++', 'z', 'sqlite3.0', 'xml2.2'
+  other_ldflags = '$(inherited) -framework ' + other_frameworks.join(' -framework ') + ' -lz -lsqlite3.0 -lstdc++ -lxml2.2'
 
-  s.xcconfig  = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/OpenTok/"' }
+  s.xcconfig = {
+    'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/AddLive"',
+    
+    'OTHER_LDFLAGS[arch=arm64]'  => other_ldflags,
+    'OTHER_LDFLAGS[arch=armv7]'  => other_ldflags,
+    'OTHER_LDFLAGS[arch=armv7s]' => other_ldflags 
+  }
 
-  s.preserve_paths = 'OpenTok.framework'
-
-  s.requires_arc = false
 end
