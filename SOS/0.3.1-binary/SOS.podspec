@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.dependency 'GoInstant', '0.3.1-binary'
   
   
-  s.dependency 'OpenTok', '2.2.0'
+  s.dependency 'OpenTok', '2.2.0-beta-3'
   
   s.dependency 'MBProgressHUD', '~> 0.8'
   
