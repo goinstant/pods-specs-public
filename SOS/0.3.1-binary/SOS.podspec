@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.platform = :ios, "6.1"
 
   
-  s.dependency 'GoInstant', '0.2.3-binary'
+  s.dependency 'GoInstant', '0.3.1-binary'
   
   
   s.dependency 'OpenTok', '2.2.0-beta-3'
