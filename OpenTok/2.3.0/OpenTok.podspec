@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
                  'CFNetwork', 'AVFoundation', 'SystemConfiguration', 'Security',
                  'QuartzCore', 'AudioToolbox', 'OpenGLES', 'MobileCoreServices'
 
-  s.libraries = 'stdc++', 'z', 'sqlite3.0', 'xml2.2'
+  s.libraries = 'stdc++.6', 'z', 'sqlite3.0', 'xml2.2'
 
   s.xcconfig  = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/OpenTok/"' }
 
