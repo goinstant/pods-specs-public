@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.platform = :ios, '5.0'
 
   s.source_files = 'OpenTok.framework/Versions/A/Headers/*.h'
-  s.resources    = 'OpenTok.framework/Versions/A/OpenTok'
 
   s.frameworks = 'Opentok', 'UIKit', 
                  'CoreMedia', 'CoreVideo', 'CoreAudio', 'CoreTelephony',
