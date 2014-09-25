@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author       = { "GoInstant inc." => "support@goinstant.com" }
 
   s.source       = { :http => 'https://s3.amazonaws.com/cdn.goinstant.net/mobile/ios/sos/v0.5.12/SOS-iOS-SDK-v0.5.12.tar.gz' }
-  s.platform = :ios, "6.1"
+  s.platform = :ios, "7.0"
 
   
   
