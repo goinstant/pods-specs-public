@@ -17,7 +17,10 @@ Pod::Spec.new do |s|
   s.frameworks = 'SOS', 'CoreTelephony', 'SystemConfiguration', 'MobileCoreServices'
 
   s.libraries = 'z'
+
+  
   s.dependency 'OpenTok', '2.4.0-beta'
+  
 
   s.xcconfig  = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/SOS/"' }
 
