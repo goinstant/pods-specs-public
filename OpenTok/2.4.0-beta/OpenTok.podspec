@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/opentok/opentok-ios-sdk-webrtc/'
   s.license  = { :type => 'Apache', :file => 'LICENSE.txt' }
 
-  s.source       = { :http => 'https://s3.amazonaws.com/mobile.goinstant.org/228a5a06-9feb-4cef-9b72-9aac6b5b5234/OpenTok-iOS-2.4.0.tar.bz2' }
+  s.source       = { :http => 'https://s3.amazonaws.com/mobile.goinstant.org/228a5a06-9feb-4cef-9b72-9aac6b5b5234/OpenTok-iOS-2.4.0-beta.tar.gz' }
 
   s.platform = :ios, '7.0'
 
