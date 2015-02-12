@@ -4,7 +4,6 @@ Pod::Spec.new do |s|
   s.author   = 'Salesforce'
   s.summary  = 'iOS SOS SDK'
   s.homepage = 'https://sos.goinstant.net'
-  s.license  = { :type => 'MIT', :file => 'LICENSE' }
 
   s.source   = { :http => 'https://s3.amazonaws.com/sos.goinstant.net/ios/sdk/v0.9.0/SOS-iOS-SDK-v0.9.0.tar.gz' }
 
