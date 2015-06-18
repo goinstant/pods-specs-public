@@ -3,10 +3,10 @@ Pod::Spec.new do |s|
   s.version  = '1.0.0'
   s.author   = 'Salesforce'
   s.summary  = 'iOS SOS SDK'
-  s.homepage = 'https://sos.goinstant.net'
+  s.homepage = 'https://salesforcesos.com'
 
 
-  s.source   = { :http => 'https://s3.amazonaws.com/sos.goinstant.net/ios/sdk/v1.0.0/SOS-iOS-SDK-v1.0.0.tar.gz' }
+  s.source   = { :http => 'https://s3.amazonaws.com/salesforcesos.com/ios/sdk/v1.0.0/SOS-iOS-SDK-v1.0.0.tar.gz' }
 
   s.platform = :ios, '7.0'
 
