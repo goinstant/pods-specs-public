@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.libraries = 'z'
 
   
-  s.dependency 'OpenTok', '2.6.0'
+  s.dependency 'OpenTok', '2.5.0'
   
 
   s.xcconfig  = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/SOS/"' }
