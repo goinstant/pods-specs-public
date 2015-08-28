@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 
   s.source   = { :http => 'https://s3.amazonaws.com/salesforcesos.com/ios/sdk/v1.2.0/SOS-iOS-SDK-v1.2.0.tar.gz' }
 
-  s.platform = :ios, '8.0'
+  s.platform = :ios, '7.0'
 
   s.source_files = 'SOS.framework/Versions/A/Headers/*.h'
   s.resource = 'SOS.framework/Versions/A/Resources/SOS.bundle'
