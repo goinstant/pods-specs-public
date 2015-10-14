@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :http => 'https://s3.amazonaws.com/mobile.goinstant.org/228a5a06-9feb-4cef-9b72-9aac6b5b5234/OpenTok-iOS-2.6.0-BitCode.tar.bz2' }
 
-  s.platform = :ios, '7.0'
+  s.platform = :ios, '8.0'
 
   s.source_files = 'OpenTok.framework/Headers/*.h'
 
