@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform = :ios, '8.0'
 
   s.source_files = 'LiveAgentChat.framework/Versions/A/Headers/*.h'
-  s.resource = 'LiveAgentChat.framework/Versions/A/Resources/LiveAgentChat.bundle'
+  s.resource = 'LiveAgentChat.framework/Versions/A/Resources/*.bundle'
   s.preserve_paths = 'LiveAgentChat.framework'
 
   s.frameworks = 'LiveAgentChat'
