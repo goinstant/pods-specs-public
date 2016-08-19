@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 
   s.source   = { :http => 'https://developer.salesforce.com/files/service_sdk_ios/1.1.0/ServiceSDK-1.1.0.dmg' }
 
-  s.platform = :ios, '9.0'
+  s.platform = :ios, '8.0'
 
   s.subspec 'All' do |all|
 
