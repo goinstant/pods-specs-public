@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary  = 'iOS ServiceSDK'
   s.homepage = 'https://salesforcesos.com'
 
-  s.source   = { :http => 'https://developer.salesforce.com/files/service_sdk_ios/208.0.0/ServiceSDK-208.0.0.dmg' }
+  s.source   = { :http => 'https://developer.salesforce.com/files/service_sdk_ios/208.0.0/ServiceSDK-208.0.0-Bitcode.dmg' }
 
   s.platform = :ios, '9.0'
 
