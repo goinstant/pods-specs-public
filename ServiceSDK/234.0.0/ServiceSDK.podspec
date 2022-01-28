@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 
   s.source   = { :http => 'https://developer.salesforce.com/files/service_sdk_ios/234.0.0/ServiceSDK-234.0.0.dmg' }
 
-  s.platform = :ios, '9.0'
+  s.platform = :ios, '12.0'
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 
   s.subspec 'All' do |all|
@@ -22,29 +22,34 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Chat' do |chat|
-
+    chat.dependency 'ServiceSDK/Core'
     chat.vendored_frameworks = [
-      'Frameworks/ServiceChat.xcframework',
-      'Frameworks/ServiceCore.xcframework',
+      'Frameworks/ServiceChat.xcframework'
      ]
 
   end
 
   s.subspec 'Knowledge' do |knowledge|
-
+    knowledge.dependency 'ServiceSDK/Core' 
     knowledge.vendored_frameworks = [
-      'Frameworks/ServiceKnowledge.xcframework',
-      'Frameworks/ServiceCore.xcframework',
+      'Frameworks/ServiceKnowledge.xcframework'
      ]
 
   end
 
   s.subspec 'Cases' do |cases|
-
+    cases.dependency 'ServiceSDK/Core'
     cases.vendored_frameworks = [
-      'Frameworks/ServiceCases.xcframework',
-      'Frameworks/ServiceCore.xcframework',
+      'Frameworks/ServiceCases.xcframework'
      ]
+
+  end
+
+  s.subspec 'Core' do |core|
+    
+    core.vendored_frameworks = [
+      'Frameworks/ServiceCore.xcframework'
+    ]
 
   end
 
