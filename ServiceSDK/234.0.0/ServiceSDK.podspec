@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary  = 'iOS ServiceSDK'
   s.homepage = 'https://developer.salesforce.com/page/SnapinsMobile'
 
-  s.source   = { :http => 'https://developer.salesforce.com/files/service_sdk_ios/234.0.0/ServiceSDK-234.0.0.dmg' }
+  s.source   = { :http => 'https://s3.amazonaws.com/salesforcesos.com/ios/servicesdk/234.0.0/ServiceSDK-234.0.0.dmg' }
 
   s.platform = :ios, '12.0'
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
